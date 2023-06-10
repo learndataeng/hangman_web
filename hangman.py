@@ -160,5 +160,5 @@ def main():
     return html
 
 if __name__ == "__main__":
-    app.secret_key = "skku_python_study"
+    app.secret_key = "Python Study"
     app.run(host='0.0.0.0', port=80)
