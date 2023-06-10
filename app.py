@@ -1,7 +1,7 @@
-#!/usr/bin/env python3.4
+#!/usr/bin/env python3.8
 # -*- coding: utf-8 -*-
 import random
-from flask import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask,session
 
 app = Flask(__name__)
 
@@ -159,6 +159,7 @@ def main():
 
     return html
 
+# python3 -m flask run --host=0.0.0.0 --port=4000
+app.secret_key = "Python Study"
 if __name__ == "__main__":
-    app.secret_key = "Python Study"
-    app.run(host='0.0.0.0', port=80)
+    app.run()
