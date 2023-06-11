@@ -2,6 +2,7 @@
 import unittest
 import app as hangman
 
+
 class HangmanTestCase(unittest.TestCase):
 
     # def setUp(self):
@@ -15,19 +16,19 @@ class HangmanTestCase(unittest.TestCase):
     def test_checkWrongAnswer(self):
         answer = hangman.checkWrongAnswer("zebrio", "zebra")
         self.assertTrue(answer)
-		
+
     def test_1(self):
         answer = hangman.checkCorrectAnswer("bazn", "baboon")
-        self.assertFalse(answer)	
-   
+        self.assertFalse(answer)
+
     def test_2(self):
         answer = hangman.checkCorrectAnswer("", " ")
-        self.assertFalse(answer)		
-    
+        self.assertFalse(answer)
+
     def test_3(self):
         answer = hangman.checkCorrectAnswer("ZEBRA", "zebra")
-        self.assertFalse(answer)		
+        self.assertFalse(answer)
 
-		
+
 if __name__ == "__main__":
     unittest.main()
