@@ -4,8 +4,7 @@ import random
 from flask import Flask, session
 
 app = Flask(__name__)
-
-aaaaasas
+sadasd
 
 HANGMANPICS = ['''
 
