@@ -29,6 +29,6 @@ class HangmanTestCase(unittest.TestCase):
         answer = hangman.checkCorrectAnswer("ZEBRA", "zebra")
         self.assertFalse(answer)
 
-
+#temp
 if __name__ == "__main__":
     unittest.main()
